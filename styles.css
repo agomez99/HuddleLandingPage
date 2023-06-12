@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -29,7 +32,11 @@
     float: left;
   }
   .svg-container{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+  }
+  .mockup {
+    height: 550px;
+    width: 700px;
   }
 
   .register-btn {
@@ -37,6 +44,13 @@
     width: 200px;
     height: 55px;
     color: hsl(257, 40%, 49%);
+    border:none;
+    background-color: white;
+  }
+
+  .register-btn:hover{
+    background-color:hsl(300, 69%, 71%) ;
+    color: white;
   }
 
   .info {
@@ -44,19 +58,24 @@
     justify-content: center;
     align-content: center;
     grid-auto-flow: column;
-    margin: 8% 15% 10% 15%;
+    margin: 10% 8% 5% 20%;
     color: white;
 
   }
+  .info-heading{
+    font-family: 'Poppins', sans-serif;
+  }
 
   p {
-    color: hsl(300, 71%, 93%)
+    color: hsl(300, 71%, 93%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
   }
 
   .btn-div {
     margin-top: 5%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .social-icons {
@@ -74,6 +93,15 @@
   #social-icon-middle {
     margin-right: 25%;
   }
+  #social-icon:hover{
+    color:hsl(300, 69%, 71%) ;
+
+   }
+   #social-icon-middle:hover{
+    color:hsl(300, 69%, 71%) ;
+
+   }
+
 
   @media (max-width: 600px) {
     body {
@@ -132,6 +160,8 @@
       float: none;
     }
 
+ 
+
     #social-icon,
     #social-icon-middle {
       margin-right: 0%;
@@ -141,7 +171,6 @@
       padding-left: 10%;
       padding-right: 10%;
     }
-
     .svg-container {
       float: left;
     }
