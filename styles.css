@@ -9,34 +9,33 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
-
+  html{
+    height:100vh;
+  }
   body {
     background-attachment: fixed;
     background-image: url('./images/bg-desktop.svg');
     background-color: hsl(257, 40%, 49%);
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position:right;
-
+    background-position:left;
+    background-size:contain;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
 
-  .logo {
-    float: left;
-  }
   .svg-container{
     margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left:10%;
+    margin-top: 5%;
   }
+
   .mockup {
-    height: 550px;
-    width: 700px;
+    height: 580px;
+    width: 800px;
+    margin-left: 10%;
   }
 
   .register-btn {
@@ -58,8 +57,9 @@
     justify-content: center;
     align-content: center;
     grid-auto-flow: column;
-    margin: 10% 8% 5% 20%;
+    margin: 30% 10% 5% 5%;
     color: white;
+    
 
   }
   .info-heading{
@@ -75,7 +75,7 @@
   .btn-div {
     margin-top: 5%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 
   .social-icons {
@@ -105,30 +105,27 @@
 
   @media (max-width: 600px) {
     body {
-      background-image: url('./images/bg-mobile.svg');
-      background-color: hsl(257, 40%, 49%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: scroll;
-      background-position: bottom;
 
+      background-color: hsl(257, 40%, 49%);
+      background-image: none;
     }
 
     .container {
       width: 100vw;
-      height: 100%
+      height: 100%;
+      --bs-gutter-x:0rem
     }
 
     .logo {
+
       width: 180px;
       height: 100px;
-
 
     }
 
     .mockup {
-      height: 80%;
-      width: 80%;
+      height: 90%;
+      width: 90%;
     }
 
     .image-container {
@@ -136,11 +133,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-image: url('./images/bg-mobile.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
     }
 
     h1 {
       margin-top: 15%;
-      font-size: 2rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom:5%;
     }
 
     .info {
@@ -160,7 +163,9 @@
       float: none;
     }
 
- 
+    .register-btn{
+      width:250px;
+    }
 
     #social-icon,
     #social-icon-middle {
@@ -171,9 +176,7 @@
       padding-left: 10%;
       padding-right: 10%;
     }
-    .svg-container {
-      float: left;
-    }
+   
 
     .btn-div {
       text-align: center;
