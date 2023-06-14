@@ -1,189 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
 
-.attribution {
-    font-size: 11px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/*font-family: 'Open Sans', sans-serif;*/
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-size: cover;
+  background-color: var(--violet);
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  min-width: 375px;
+}
+
+main {
+  padding: 5em 10em;
+}
+
+button {
+  padding: 0.8em 3.5em;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  color: var(--violet);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+i {
+  font-size: 2rem;
+  color: white;
+  margin: 0 0.2em;
+}
+
+i:hover {
+  color: var(--soft-magenta);
+}
+
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  margin-top: 5em;
+  color: white;
+}
+
+.mockups-description h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.mockups-description p {
+  font-weight: 400;
+  margin-top: 2em;
+}
+.social-media {
+  margin-top: 5em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1536px) {
+  .mockups-description h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1280px) {
+  header img {
+    width: 23%;
+  }
+
+  .mockups-description h1 {
+    font-size: 2rem;
+  }
+  .mockups-description p {
+    font-size: 0.8rem;
+  }
+  button {
+    padding: 0.6em 3em;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 3rem;
+  }
+
+  .mockups {
+    flex-direction: column;
     text-align: center;
   }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-  html{
-    height:100vh;
-  }
-  body {
-    background-attachment: fixed;
-    background-image: url('./images/bg-desktop.svg');
-    background-color: hsl(257, 40%, 49%);
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position:left;
-    background-size:contain;
+  .mockups-img img {
+    width: 100%;
   }
 
-
-  .svg-container{
-    margin-bottom: 5%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-left:10%;
-    margin-top: 5%;
+  .mockups-description h1 {
+    font-size: 3rem;
   }
-
-  .mockup {
-    height: 580px;
-    width: 800px;
-    margin-left: 10%;
-  }
-
-  .register-btn {
-    border-radius: 50px;
-    width: 200px;
-    height: 55px;
-    color: hsl(257, 40%, 49%);
-    border:none;
-    background-color: white;
-  }
-
-  .register-btn:hover{
-    background-color:hsl(300, 69%, 71%) ;
-    color: white;
-  }
-
-  .info {
-    text-align: left;
-    justify-content: center;
-    align-content: center;
-    grid-auto-flow: column;
-    margin: 30% 10% 5% 5%;
-    color: white;
-    
-
-  }
-  .info-heading{
-    font-family: 'Poppins', sans-serif;
-  }
-
-  p {
-    color: hsl(300, 71%, 93%);
-    font-family: 'Open Sans', sans-serif;
+  .mockups-description p {
     font-size: 1rem;
   }
 
-  .btn-div {
-    margin-top: 5%;
-    text-align: left;
-    margin-left: 5%;
+  .social-media {
+    justify-content: center;
   }
+}
 
-  .social-icons {
-    display: flex;
-    float: right;
+@media (max-width: 768px) {
+  header img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 640px) {
+  .mockups-description h1 {
+    font-size: 2.5rem;
+  }
+  .mockups-description p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 475px) {
+  header img {
+    width: 50%;
+  }
+  .mockups-description h1 {
     font-size: 2rem;
-    color: white;
-    position: relative;
-    margin-top: 30%;
-    margin-right: 20%;
-
+  }
+  .mockups-description p {
+    font-size: 0.6rem;
   }
 
-  #social-icon,
-  #social-icon-middle {
-    margin-right: 25%;
+  button {
+    width: 100%;
   }
-  #social-icon:hover{
-    color:hsl(300, 69%, 71%) ;
+}
 
-   }
-   #social-icon-middle:hover{
-    color:hsl(300, 69%, 71%) ;
-
-   }
-
-
-  @media (max-width: 600px) {
-    body {
-
-      background-color: hsl(257, 40%, 49%);
-      background-image: none;
-    }
-
-    .container {
-      width: 100vw;
-      height: 100%;
-      --bs-gutter-x:0rem
-    }
-
-    .logo {
-
-      width: 180px;
-      height: 100px;
-
-    }
-
-    .mockup {
-      height: 90%;
-      width: 90%;
-    }
-
-    .image-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url('./images/bg-mobile.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-    }
-
-    h1 {
-      margin-top: 15%;
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom:5%;
-    }
-
-    .info {
-      margin: 0%;
-      text-align: center;
-      font-size: 1.2rem;
-      padding: 5% 5% 6% 5%;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      font-size: 1.5rem;
-      color: white;
-      margin: 20% 20% 0% 20%;
-      float: none;
-    }
-
-    .register-btn{
-      width:250px;
-    }
-
-    #social-icon,
-    #social-icon-middle {
-      margin-right: 0%;
-    }
-
-    #social-icon-middle {
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-   
-
-    .btn-div {
-      text-align: center;
-      margin: 0%;
-    }
-
-    .register {
-      width: 250px;
-    }
+@media (max-width: 375px) {
+  .mockups-description h1 {
+    font-size: 1.3rem;
   }
+
+  br {
+    display: none;
+  }
+}
