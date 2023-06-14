@@ -25,12 +25,16 @@ main {
 button {
   padding: 0.8em 3.5em;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   border: none;
   color: var(--violet);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 3em;
   cursor: pointer;
+  height:50px;
+  width:150px;
+
+
 }
 
 button:hover {
@@ -57,10 +61,12 @@ i:hover {
   color: white;
 }
 
+
 .mockups-description h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+
 }
 .mockups-description p {
   font-weight: 400;
@@ -72,7 +78,6 @@ i:hover {
   justify-content: flex-end;
 }
 
-/* RESPONSIVE */
 
 @media (max-width: 1536px) {
   .mockups-description h1 {
