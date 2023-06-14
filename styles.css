@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(images/bg-desktop.svg);
+  background-image: url(./images/bg-desktop.svg);
   background-size: cover;
   background-color: var(--violet);
   font-size: 1rem;
