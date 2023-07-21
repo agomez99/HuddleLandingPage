@@ -2,7 +2,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/agomez99/HuddleLandingPage](https://github.com/agomez99/HuddleLandingPage)
 - Live Site URL: [https://agomez99.github.io/HuddleLandingPage/](https://agomez99.github.io/HuddleLandingPage/)
 
 ## My process
