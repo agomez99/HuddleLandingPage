@@ -1,12 +1,9 @@
 
-### Screenshot
-
-![](./screenshot.jpg)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://agomez99.github.io/HuddleLandingPage/](https://agomez99.github.io/HuddleLandingPage/)
 
 ## My process
 
@@ -17,6 +14,6 @@
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [https://github.com/agomez99/HuddleLandingPage](https://github.com/agomez99/HuddleLandingPage)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
