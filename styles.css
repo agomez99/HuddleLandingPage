@@ -23,17 +23,16 @@ main {
 }
 
 button {
-  padding: 0.8em 3.5em;
   background-color: white;
   border-radius: 50px;
   border: none;
   color: var(--violet);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-top: 3em;
   cursor: pointer;
-  height:50px;
-  width:150px;
-
+  height:60px;
+  width:210px;
+  font-size:20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 5px) 0px 3px 8px;
 
 }
 
@@ -62,15 +61,18 @@ i:hover {
 }
 
 
-.mockups-description h1 {
-  font-size: 3.0rem;
+.description-header {
+  font-size: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  width:95%;
+
 
 }
 .mockups-description p {
   font-weight: 400;
-  margin-top: 2em;
+  width:90%;
+
 }
 .social-media {
   margin-top: 5em;
@@ -79,89 +81,66 @@ i:hover {
 }
 
 
-@media (max-width: 1536px) {
-  .mockups-description h1 {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 1280px) {
-  header img {
-    width: 23%;
-  }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--violet);
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    min-width: 375px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+
+  }
+  .logo{
+    height:40px;
+  }
+  .image{
+    width: 300px;
+  }
   .mockups-description h1 {
-    font-size: 2rem;
+    font-size:25px;
+    width:100;
+    margin-top:10%;
+
+
   }
   .mockups-description p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    text-align: center;
+    width:100%;
   }
-  button {
-    padding: 0.6em 3em;
-  }
-}
-
-@media (max-width: 1024px) {
-  main {
-    padding: 3rem;
-  }
-
-  .mockups {
+  .mockups{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
     text-align: center;
   }
-  .mockups-img img {
-    width: 100%;
+  button {
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    color: var(--violet);
+    cursor: pointer;
+    height:45px;
+    width:210px;
+    font-size:15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 5px) 0px 3px 8px;
+  
   }
-
-  .mockups-description h1 {
-    font-size: 3rem;
-  }
-  .mockups-description p {
-    font-size: 1rem;
-  }
-
   .social-media {
+    margin-top: 1.5em;
+    display: flex;
     justify-content: center;
   }
-}
-
-@media (max-width: 768px) {
-  header img {
-    width: 30%;
-  }
-}
-
-@media (max-width: 640px) {
-  .mockups-description h1 {
-    font-size: 2.5rem;
-  }
-  .mockups-description p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 475px) {
-  header img {
-    width: 50%;
-  }
-  .mockups-description h1 {
-    font-size: 2rem;
-  }
-  .mockups-description p {
-    font-size: 0.6rem;
-  }
-
-  button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 375px) {
-  .mockups-description h1 {
-    font-size: 1.3rem;
-  }
-
-  br {
-    display: none;
-  }
+  
 }
